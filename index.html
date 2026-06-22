@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>LINDBERG — Contact & Collection</title>
+  <style>
+    :root {
+      --bg: #F7F5F0;
+      --ink: #111111;
+      --grey: #6F6F6A;
+      --line: #D8D4CC;
+      --white: #FFFFFF;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; background: var(--bg); }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Futura Std Light", "Futura Std", Futura, "Avenir Next", Arial, sans-serif;
+      font-weight: 300;
+      letter-spacing: .01em;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      width: min(100%, 520px);
+      margin: 0 auto;
+      padding: 30px 20px 42px;
+      min-height: 100vh;
+    }
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 0 26px;
+      width: 100%;
+    }
+    .logo {
+      display: block;
+      width: 190px;
+      max-width: 62%;
+      height: auto;
+      margin: 0 auto;
+    }
+    .hero {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      filter: grayscale(100%);
+      margin: 0 0 32px;
+    }
+    .intro { text-align: center; margin: 0 0 32px; }
+    .intro p {
+      margin: 0 auto;
+      max-width: 340px;
+      color: var(--grey);
+      font-size: 15px;
+      line-height: 1.55;
+    }
+    .actions { display: grid; gap: 12px; max-width: 360px; margin: 0 auto 54px; }
+    .button, .save-button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--ink);
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--ink);
+      background: transparent;
+      transition: opacity .16s ease, transform .16s ease;
+    }
+    .button { min-height: 50px; padding: 14px 18px; font-size: 14px; }
+    .button.primary { background: var(--ink); color: var(--white); }
+    .button:hover, .save-button:hover { opacity: .82; transform: translateY(-1px); }
+    .divider { border: 0; border-top: 1px solid var(--line); margin: 0 0 40px; }
+    .section-title { text-align: center; margin-bottom: 26px; }
+    .eyebrow {
+      margin: 0 0 11px;
+      color: var(--grey);
+      font-size: 10px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    h1 { margin: 0; font-weight: 300; font-size: clamp(28px, 8vw, 40px); line-height: 1.06; }
+    .section-title p { margin: 16px auto 0; max-width: 350px; color: var(--grey); font-size: 14px; line-height: 1.55; }
+    .contacts { display: grid; gap: 10px; margin: 0 0 46px; }
+    .contact-card {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 16px;
+      padding: 17px 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.28);
+    }
+    .contact-card h3 { margin: 0 0 6px; font-weight: 300; font-size: 15px; letter-spacing: .04em; }
+    .contact-card p { margin: 0; color: var(--grey); font-size: 12.5px; line-height: 1.35; }
+    .save-button { min-width: 104px; min-height: 38px; padding: 11px 15px; font-size: 12px; white-space: nowrap; }
+    footer { text-align: center; color: var(--grey); font-size: 11px; line-height: 1.5; padding-top: 8px; }
+    footer a { color: var(--grey); text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+    @media (min-width: 680px) {
+      .page { width: min(100%, 760px); padding: 42px 34px 54px; }
+      .logo { width: 210px; }
+      .hero { max-height: 660px; }
+      .contacts { grid-template-columns: 1fr 1fr; }
+      .contact-card { grid-template-columns: 1fr; min-height: 146px; }
+      .save-button { width: max-content; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page" id="top">
+    <header>
+      <img class="logo" src="assets/lindberg-logo.svg" alt="LINDBERG" />
+    </header>
+
+    <img class="hero" src="assets/lindberg-hero.jpg" alt="LINDBERG eyewear campaign visual" />
+
+    <section class="intro">
+      <p>Explore the collection or save your LINDBERG contact.</p>
+    </section>
+
+    <nav class="actions" aria-label="Primary actions">
+      <a class="button primary" href="#contacts">Register your contact</a>
+      <a class="button" href="https://my.keringeyewear.com/fr/login" target="_blank" rel="noopener noreferrer">Discover the collection</a>
+    </nav>
+
+    <hr class="divider" />
+
+    <section id="contacts">
+      <div class="section-title">
+        <p class="eyebrow">Contact</p>
+        <h1>Choose your LINDBERG ambassador</h1>
+        <p>Select your local contact and save their details directly to your phone.</p>
+      </div>
+      <div class="contacts">
+        
+        <article class="contact-card">
+          <div>
+            <h3>Jorn POULSEN</h3>
+            <p>Paris &amp; French Overseas Territories</p>
+          </div>
+          <a class="save-button" href="vcf/jorn-poulsen.vcf" download>Save contact</a>
+        </article>
+        <article class="contact-card">
+          <div>
+            <h3>Julie SEGUINEL</h3>
+            <p>East of France</p>
+          </div>
+          <a class="save-button" href="vcf/julie-seguinel.vcf" download>Save contact</a>
+        </article>
+        <article class="contact-card">
+          <div>
+            <h3>Joke VERGAUWEN</h3>
+            <p>Belgium &amp; Luxembourg</p>
+          </div>
+          <a class="save-button" href="vcf/joke-vergauwen.vcf" download>Save contact</a>
+        </article>
+        <article class="contact-card">
+          <div>
+            <h3>Sandra JULIEN</h3>
+            <p>Ile-de-France</p>
+          </div>
+          <a class="save-button" href="vcf/sandra-julien.vcf" download>Save contact</a>
+        </article>
+        <article class="contact-card">
+          <div>
+            <h3>Laurent LEMOINE</h3>
+            <p>West of France</p>
+          </div>
+          <a class="save-button" href="vcf/laurent-lemoine.vcf" download>Save contact</a>
+        </article>
+        <article class="contact-card">
+          <div>
+            <h3>Stéphanie VOS</h3>
+            <p>Belgium Wallonia</p>
+          </div>
+          <a class="save-button" href="vcf/stephanie-vos.vcf" download>Save contact</a>
+        </article>
+        <article class="contact-card">
+          <div>
+            <h3>Sylvie CAVALLUZZI</h3>
+            <p>North of France</p>
+          </div>
+          <a class="save-button" href="vcf/sylvie-cavalluzzi.vcf" download>Save contact</a>
+        </article>
+        <article class="contact-card">
+          <div>
+            <h3>Agnes RIVET</h3>
+            <p>South of France</p>
+          </div>
+          <a class="save-button" href="vcf/agnes-rivet.vcf" download>Save contact</a>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <a href="#top">Back to top</a><br /><br />
+      Designed in Denmark. Made to be individual.
+    </footer>
+  </main>
+</body>
+</html>
