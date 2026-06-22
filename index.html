@@ -16,11 +16,7 @@
     }
 
     * { box-sizing: border-box; }
-
-    html {
-      scroll-behavior: smooth;
-      background: var(--bg);
-    }
+    html { scroll-behavior: smooth; background: var(--bg); }
 
     body {
       margin: 0;
@@ -43,15 +39,20 @@
     }
 
     header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 6px 0 26px;
+      padding: 2px 0 24px;
+      width: 100%;
     }
 
     .logo {
-      width: 176px;
-      max-width: 62%;
+      display: block;
+      margin: 0 auto;
+      width: 168px;
+      max-width: 58%;
       height: auto;
-      display: inline-block;
     }
 
     .hero-image {
@@ -60,15 +61,11 @@
       display: block;
       object-fit: cover;
       object-position: center top;
-      border-radius: 0;
       margin: 0 auto 32px;
       filter: grayscale(100%);
     }
 
-    .intro {
-      text-align: center;
-      padding: 0 8px 34px;
-    }
+    .intro { text-align: center; padding: 0 8px 34px; }
 
     .intro p {
       margin: 0 auto;
@@ -94,36 +91,18 @@
       border: 1px solid var(--ink);
       border-radius: 999px;
       text-decoration: none;
-      text-transform: none;
       font-size: 14px;
       line-height: 1;
-      transition: opacity 160ms ease, transform 160ms ease, background 160ms ease;
+      transition: opacity 160ms ease, transform 160ms ease;
     }
-
     .button:hover { opacity: .82; transform: translateY(-1px); }
     .button:active { transform: translateY(0); }
+    .button.primary { background: var(--ink); color: var(--white); }
+    .button.secondary { background: transparent; color: var(--ink); }
 
-    .button.primary {
-      background: var(--ink);
-      color: var(--white);
-    }
+    .divider { border: 0; border-top: 1px solid var(--line); margin: 0 0 40px; }
 
-    .button.secondary {
-      background: transparent;
-      color: var(--ink);
-    }
-
-    .divider {
-      border: 0;
-      border-top: 1px solid var(--line);
-      margin: 0 0 40px;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 26px;
-    }
-
+    .section-title { text-align: center; margin-bottom: 26px; }
     .eyebrow {
       margin: 0 0 11px;
       color: var(--grey);
@@ -148,11 +127,7 @@
       line-height: 1.55;
     }
 
-    .contacts {
-      display: grid;
-      gap: 10px;
-      margin: 0 0 46px;
-    }
+    .contacts { display: grid; gap: 10px; margin: 0 0 46px; }
 
     .contact-card {
       display: grid;
@@ -169,7 +144,6 @@
       font-weight: 300;
       font-size: 15px;
       letter-spacing: 0.04em;
-      text-transform: none;
     }
 
     .contact-card p {
@@ -196,7 +170,6 @@
       white-space: nowrap;
       transition: opacity 160ms ease, transform 160ms ease;
     }
-
     .card-button:hover { opacity: .82; transform: translateY(-1px); }
 
     footer {
@@ -206,7 +179,6 @@
       line-height: 1.5;
       padding: 8px 0 0;
     }
-
     .back-top {
       display: inline-block;
       margin-bottom: 24px;
@@ -218,27 +190,12 @@
     }
 
     @media (min-width: 680px) {
-      .site {
-        width: min(100%, 760px);
-        padding: 42px 34px 54px;
-      }
-
-      .hero-image {
-        max-height: 660px;
-      }
-
-      .contacts {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .contact-card {
-        grid-template-columns: 1fr;
-        min-height: 146px;
-      }
-
-      .card-button {
-        width: max-content;
-      }
+      .site { width: min(100%, 760px); padding: 42px 34px 54px; }
+      .logo { width: 190px; }
+      .hero-image { max-height: 660px; }
+      .contacts { grid-template-columns: 1fr 1fr; }
+      .contact-card { grid-template-columns: 1fr; min-height: 146px; }
+      .card-button { width: max-content; }
     }
   </style>
 </head>
@@ -275,56 +232,56 @@
           <h3>Jorn POULSEN</h3>
           <p>Paris &amp; French Overseas Territories</p>
         </div>
-        <a class="card-button" href="https://kering.sharepoint.com/:u:/s/VisuelsMarquesKeringEyewearFrance/IQA3okItzWHTRaMAD3M2_GY0AYwaz8Tr_N7QOwdvo5s-TPI?e=asaWY2" target="_blank" rel="noopener noreferrer" aria-label="Save contact for Jorn POULSEN">Save contact</a>
+        <a class="card-button" href="vcf/jorn-poulsen.vcf" aria-label="Save contact for Jorn POULSEN">Save contact</a>
       </article>
       <article class="contact-card">
         <div class="contact-copy">
           <h3>Julie SEGUINEL</h3>
           <p>East of France</p>
         </div>
-        <a class="card-button" href="https://kering.sharepoint.com/:u:/s/VisuelsMarquesKeringEyewearFrance/IQAIYAwTzL1iSY-xjZ5gBFioAXmfaamRhLITFTgtB-Dg60w?e=5mLECE" target="_blank" rel="noopener noreferrer" aria-label="Save contact for Julie SEGUINEL">Save contact</a>
+        <a class="card-button" href="vcf/julie-seguinel.vcf" aria-label="Save contact for Julie SEGUINEL">Save contact</a>
       </article>
       <article class="contact-card">
         <div class="contact-copy">
           <h3>Joke VERGAUWEN</h3>
           <p>Belgium &amp; Luxembourg</p>
         </div>
-        <a class="card-button" href="https://kering.sharepoint.com/:u:/s/VisuelsMarquesKeringEyewearFrance/IQB3MrhZ-uD6SYWw9BUl3omPAei_jW0yuGKF9mEOiwRcp6M?e=phgVv2" target="_blank" rel="noopener noreferrer" aria-label="Save contact for Joke VERGAUWEN">Save contact</a>
+        <a class="card-button" href="vcf/joke-vergauwen.vcf" aria-label="Save contact for Joke VERGAUWEN">Save contact</a>
       </article>
       <article class="contact-card">
         <div class="contact-copy">
           <h3>Sandra JULIEN</h3>
-          <p>IDF - Ile-de-France &amp; Center of France</p>
+          <p>Ile-de-France</p>
         </div>
-        <a class="card-button" href="https://kering.sharepoint.com/:u:/s/VisuelsMarquesKeringEyewearFrance/IQD8eOQksEVZQKh4pIEmnh3QARFn_ZIfKXC8eThWZmwsld8?e=geBThj" target="_blank" rel="noopener noreferrer" aria-label="Save contact for Sandra JULIEN">Save contact</a>
+        <a class="card-button" href="vcf/sandra-julien.vcf" aria-label="Save contact for Sandra JULIEN">Save contact</a>
       </article>
       <article class="contact-card">
         <div class="contact-copy">
           <h3>Laurent LEMOINE</h3>
           <p>West of France</p>
         </div>
-        <a class="card-button" href="https://kering.sharepoint.com/:u:/s/VisuelsMarquesKeringEyewearFrance/IQBIb1Ji4A6vS6oIrSdUg49ZAWlKZ3vS--RxTbRW066OhQ0?e=d07TgX" target="_blank" rel="noopener noreferrer" aria-label="Save contact for Laurent LEMOINE">Save contact</a>
+        <a class="card-button" href="vcf/laurent-lemoine.vcf" aria-label="Save contact for Laurent LEMOINE">Save contact</a>
       </article>
       <article class="contact-card">
         <div class="contact-copy">
           <h3>Stéphanie VOS</h3>
-          <p>Wallonia</p>
+          <p>Belgium Wallonia</p>
         </div>
-        <a class="card-button" href="https://kering.sharepoint.com/:u:/s/VisuelsMarquesKeringEyewearFrance/IQDbhTldU1S1RozGMKoMLnypATioOm8rrwHZWWx99uzuGhg?e=uLdHld" target="_blank" rel="noopener noreferrer" aria-label="Save contact for Stéphanie VOS">Save contact</a>
+        <a class="card-button" href="vcf/stephanie-vos.vcf" aria-label="Save contact for Stéphanie VOS">Save contact</a>
       </article>
       <article class="contact-card">
         <div class="contact-copy">
           <h3>Sylvie CAVALLUZZI</h3>
           <p>North of France</p>
         </div>
-        <a class="card-button" href="https://kering.sharepoint.com/:u:/s/VisuelsMarquesKeringEyewearFrance/IQBctZB2Y2mjQqn021B_tZiIAXqjq1ryYT1aZbqdAhxVGeA?e=EZJP3S" target="_blank" rel="noopener noreferrer" aria-label="Save contact for Sylvie CAVALLUZZI">Save contact</a>
+        <a class="card-button" href="vcf/sylvie-cavalluzzi.vcf" aria-label="Save contact for Sylvie CAVALLUZZI">Save contact</a>
       </article>
       <article class="contact-card">
         <div class="contact-copy">
           <h3>Agnes RIVET</h3>
           <p>South of France</p>
         </div>
-        <a class="card-button" href="https://kering.sharepoint.com/:u:/s/VisuelsMarquesKeringEyewearFrance/IQC_CxzMIV3uSbvJZyYuswjEAUbPucdV-oVfvfG1FgpQQWE?e=eznpGc" target="_blank" rel="noopener noreferrer" aria-label="Save contact for Agnes RIVET">Save contact</a>
+        <a class="card-button" href="vcf/agnes-rivet.vcf" aria-label="Save contact for Agnes RIVET">Save contact</a>
       </article>
       </div>
     </section>

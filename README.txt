@@ -1,21 +1,21 @@
-LINDBERG landing page — Netlify Drop package
+LINDBERG landing page — GitHub Pages update V2
 
-How to deploy:
-1. Go to https://app.netlify.com/drop
-2. Drag and drop this ZIP file or the unzipped folder.
-3. Netlify will generate a public URL ending in .netlify.app.
-4. Use that URL to generate the QR code for the BookNews back cover.
+WHAT CHANGED:
+- Logo alignment corrected and centered.
+- Contact regions corrected:
+  Sandra JULIEN: Ile-de-France
+  Stéphanie VOS: Belgium Wallonia
+- Save contact buttons now point to local VCF files hosted directly in the GitHub Pages site, not SharePoint.
+  This avoids the SharePoint preview warning.
 
-Included:
-- index.html
-- assets/lindberg-hero.jpg
-- assets/lindberg-logo.svg (placeholder wordmark; replace with official logo if needed)
-- vcf/ local backup files
+HOW TO UPDATE GITHUB:
+1. Unzip this package.
+2. In the GitHub repository lindberg-contact, click Add file > Upload files.
+3. Upload/drag all extracted files and folders: index.html, assets, vcf, README.txt.
+4. Confirm file replacement when GitHub asks.
+5. Click Commit changes.
+6. Wait 1-2 minutes and refresh the site.
 
-Current buttons:
-- Register your contact: scrolls to the ambassador section.
-- Discover the collection: opens https://my.keringeyewear.com/fr/login
-- Save contact buttons: use the SharePoint links provided by Kilian.
-
-Recommendation before printing:
-Test on iPhone + Android using 4G/5G, not only corporate Wi-Fi.
+LOGO:
+The current assets/lindberg-logo.svg is a centered placeholder wordmark.
+If you have the official LINDBERG logo file, replace assets/lindberg-logo.svg by your official logo and keep the same filename, or update the src path in index.html.
